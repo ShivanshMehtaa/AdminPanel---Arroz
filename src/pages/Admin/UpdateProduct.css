@@ -1,0 +1,8 @@
+.prod-img{
+    height: 5rem;
+    width: 5rem;
+}
+.prod-img img{
+    width: 100%;
+    height: 100%;
+}
