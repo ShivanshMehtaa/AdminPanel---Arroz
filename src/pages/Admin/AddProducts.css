@@ -86,3 +86,18 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+
+
+@media only screen and (max-width: 640px){
+    .addprod-form {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px;
+        border: 1px solid rgb(224, 224, 224);
+        border-radius: 10px;
+        width:300px;
+       
+      
+      }
+}

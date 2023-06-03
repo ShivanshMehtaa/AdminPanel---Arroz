@@ -3,6 +3,7 @@ import { db } from '../../firebase/config';
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import AdminProducts from './AdminProducts';
 import { Link } from 'react-router-dom';
+import {GrAdd} from "react-icons/gr"
 
 const Admin = () => {
   const [errorMsg,setErrorMsg] = useState("");
@@ -100,7 +101,7 @@ const handleCategoryChange=(e)=>{
 
 
         <div className="add-products">
-        <Link to="/addProduct">Add</Link>
+        <Link className='a' to="/addProduct"><GrAdd/></Link>
       </div>
       </div>
 

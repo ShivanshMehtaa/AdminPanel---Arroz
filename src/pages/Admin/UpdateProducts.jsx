@@ -135,7 +135,7 @@ const UpdateProducts = () => {
       {product&&
         <div>
             <form action="" className='addprod-form' onSubmit={handleUpdateProducts}>
-                <p>Add Products</p>
+                <p>Update Entry</p>
                 {
                     successMsg && 
                         <>

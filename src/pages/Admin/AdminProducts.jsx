@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import './Admin.css';
+import './AddProducts.css';
 import { deleteDoc, doc } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { Link, useNavigate } from 'react-router-dom';
 import UpdateProducts from './UpdateProducts';
+import './Admin.css';
+import {AiFillEdit} from "react-icons/ai"
+import {MdDelete} from "react-icons/md"
 
 const AdminProducts = (products) => {
   const [errorMsg, setErrorMsg] = useState("");
@@ -36,7 +39,7 @@ const AdminProducts = (products) => {
       </div>
 
       </div>
-      <div className="edit"><Link state={{product:product, id:products.products.id}} to={'/updateProducts'}>Edit</Link></div>
+      <div className="edit"><Link state={{product:product, id:products.products.id}} to={'/updateProducts'}><AiFillEdit/></Link></div>
       <div className="delete" onClick={async() => {
 
 
@@ -54,7 +57,7 @@ const AdminProducts = (products) => {
         // DELETING PRODUCTS 
 
 
-      }}>Delete</div>
+      }}><MdDelete/></div>
     </div>
   )
 }
